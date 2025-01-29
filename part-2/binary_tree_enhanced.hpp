@@ -40,6 +40,7 @@ make_binary_tree_enhanced(const V &value,
                           std::unique_ptr<BinaryTreeEnhanced<V>> r)
 {
     // WRITE YOUR CODE HERE
+    return std::make_unique<BinaryTreeEnhanced<V>>{ new BinaryTreeEnhanced<V>{value, std::move(l), std::move(r)};
 }
 
 #endif // __binary_tree_enhanced__
